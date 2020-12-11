@@ -1,0 +1,24 @@
+.fixed_header tbody{
+    display:block;
+    overflow:auto;
+    height:200px;
+    width:100%;
+  }
+.fixed_header thead tr{
+    display:block;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+  
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 21.3%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

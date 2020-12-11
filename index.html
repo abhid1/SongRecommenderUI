@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Song Recommendation</title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- 
+       Bootstrap styling if you want to use it: 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+</head>
+
+<body>
+    <div id="header-wrap">
+        <header style="margin-left: 290px;">
+            <h1>Song Recommender</h1>
+            <h3 style="margin-left: 30px;">Please select up to 5 songs</h2>
+        </header>
+    </div>
+    <div>
+        <table class="fixed_header" cellspacing="0" rules="all" border="1" id="songsTable" style="border-collapse: collapse;">
+            <thead>
+                <tr id="rowHeader">
+                    <th style="width:20px"></th>
+                    <th style="width:411px">Artist</th>
+                    <th style="width:472px">Song</th>
+                </tr>
+                <!-- <tr>
+                    <td id="checkBoxes"></td>
+                    <td id="artist"></svg></td>
+                    <td id="songName"></svg></td>
+                </tr> -->
+            </thead>
+            <tbody id="songsTableData" style="overflow:auto;""></tbody>
+        </table> 
+        <button class="vertical-center" id="recommendationButton" type="button">Get Recommendations</button>
+        <div id="modelOutput">
+            <div id="tfidfOutput">
+                <label style="position:absolute; top: 50%; left: 3%;">TF-IDF Recommendations:</label>
+            </div>
+            <div id="kMeansOutput">
+                <label style="position:absolute; top: 65%; left: 3%;">K-Means Recommendations:</label>
+            </div>
+            <div id="spacyOutput">
+                <label style="position:absolute; top: 80%; left: 3%;">Spacy Recommendations:</label>
+            </div>
+            <div id="knnOutput">
+                <label style="position:absolute; top: 95%; left: 3%;">KNN Recommendations:</label>
+            </div>
+        </div>
+    </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+
+</html>

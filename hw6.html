@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 6 - The State of the State of the State </title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-force.v2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- 
+       Bootstrap styling if you want to use it: 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+</head>
+
+<body>
+    <div id="header-wrap">
+        <header>
+            <h1>The State of the State of the States</h1>
+            <div>Name: Abhi Dubal; E-Mail: u0906015@utah.edu; UID: u0906015</div>
+        </header>
+    </div>
+    <div id="bubbleButtons"></div>
+    <div class = "grid-container">
+        <div id="bubbleChart" class="item1"></div>
+        <div id="tableView" class="item2">
+            <table id="bubbleTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" id="phraseHead">Phrase</th>
+                        <th class="sortable" id="frequencyHead">Frequency</th>
+                        <th class="sortable" id="percentageHead">Percentages</th>
+                        <th class="sortable" id="totalHead">Total</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><svg id="frequencyAxis"></svg></td>
+                        <td><svg id="percentageAxis"></svg></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="bubbleTableBody"></tbody>
+            </table>
+        </div>
+
+    </div>  
+    <script src="js/script.js"></script>
+    <script src="js/BubbleChart.js" async></script>
+    <script src="js/Table.js" async></script>
+</body>
+
+</html>
